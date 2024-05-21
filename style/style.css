@@ -6,7 +6,7 @@
 }
 
 body{
-
+  min-height: 100vh;
   backdrop-filter: blur(10000px);
   background: linear-gradient(90deg, rgba(5,0,255,0.2) 0%, rgba(0,255,209,0.3) 70%);
 }
