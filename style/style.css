@@ -16,7 +16,7 @@ body{
   flex-direction: column;
   gap: 20px;
   max-width: 1020px;
-  padding-block: 50px;
+  padding-top: 50px;
   padding-inline: 20px;
   margin-inline: auto;
 }
@@ -54,11 +54,11 @@ body{
   flex: 1;
   font-size: 18px;
   padding: 20px;
-  min-height: 300px;
+  min-height: 200px;
   border: none;
   box-shadow: 0px 0px 10px rgba(5,0,255,0.1);
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: all 0.15s;
   resize: none;
 }
@@ -79,11 +79,11 @@ textarea::-webkit-scrollbar {
 .cards .card{
   flex: 1;
   padding: 20px;
-  min-height: 300px;
+  min-height: 200px;
   border: none;
   box-shadow: 0px 0px 10px rgba(5,0,255,0.1);
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .cards .card p{
@@ -92,11 +92,20 @@ textarea::-webkit-scrollbar {
 }
 
 @media screen and (max-width : 568px) {
-  h1{
-    line-height: 70px;
+  .top h1{
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .top .descriptions .description p, .logo{
+    font-size: 12px;
   }
   
   .cards{
     flex-direction: column;
+  }
+
+  .cards textarea, .cards .card p{
+    font-size: 14px;
   }
 }
